@@ -17,6 +17,9 @@ render(
                     <Route exact path="/home" element={<Home />}/>
                     <Route exact path="/" element={<Home />}/>
                 </Routes>
+                <div className='credits'>
+                    Brought to you by NASA's <a href="https://api.nasa.gov/">APOD</a> API
+                </div>
             </div>
         </BrowserRouter>
   </React.StrictMode>,
