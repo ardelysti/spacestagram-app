@@ -76,7 +76,7 @@
 .align-end {
     float: right;
 }
-.align-left {
+.align-right {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
