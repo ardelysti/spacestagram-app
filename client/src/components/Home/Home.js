@@ -12,7 +12,7 @@ import './Home.css';
 const breakpointColumnsObj = {
     default: 4,
     1100: 3,
-    700: 1,
+    800: 2,
     500: 1
 };
 
