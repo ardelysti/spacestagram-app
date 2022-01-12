@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    height: 100%;
+    font-family:'Courier New', Courier, monospace !important;
+    background-image: url("./assets/images/space-bg-muted.jpeg");
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  #root {
+      background-attachment: fixed;
+  }
+  
