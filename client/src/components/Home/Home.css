@@ -1,0 +1,174 @@
+.grid-content {
+    padding: 2%;
+}
+
+.content.grid-content.error * {
+    color: white !important;
+    text-align: center;
+}
+
+.result-card.card,
+.details-modal .modal-content {
+    overflow: hidden;
+    border-radius: 16px;
+    border-width: 0;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.result-card .card-body,
+.details-footer {
+    height: 3rem;
+}
+
+.details-date {
+    font-style:italic;
+    color: blue;
+}
+
+.card-data-title.card-title {
+    padding: 0.5rem 1rem 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    justify-content: space-between;
+}
+.card-text svg,
+.details-footer svg {
+    font-size: 14pt;
+    color: magenta;
+    transition: 0.1s ease-in-out;
+}
+
+.my-masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: -30px; /* gutter size offset */
+    width: auto;
+}
+.my-masonry-grid_column {
+    padding-left: 30px; /* gutter size */
+    background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > .result-card.card { /* change div to reference your elements you put in <Masonry> */
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.align-start {
+    float: left;
+}
+.align-end {
+    float: right;
+}
+.align-left {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.action-button:hover {
+    font-size: 16pt;
+    transition: 0.1s ease-in-out;
+}
+
+button.like-button,
+button.show-details-button {
+    border: none;
+    background-color: transparent !important;
+}
+
+
+/* Loading page animation */
+
+.ring
+{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:150px;
+  height:150px;
+  background:transparent;
+  border:3px solid #3c3c3c;
+  border-radius:50%;
+  text-align:center;
+  line-height:150px;
+  font-family:sans-serif;
+  font-size:20px;
+  color:magenta;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  text-shadow:0 0 10px magenta;
+  box-shadow:0 0 20px rgba(0,0,0,.5);
+}
+.ring:before
+{
+  content:'';
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  border:3px solid transparent;
+  border-top:3x solid magenta;
+  border-right:3px solid magenta;
+  border-radius:50%;
+  animation:animateC 2s linear infinite;
+}
+.ring > span
+{
+  display:block;
+  position:absolute;
+  top:calc(50% - 2px);
+  left:50%;
+  width:50%;
+  height:4px;
+  background:transparent;
+  transform-origin:left;
+  animation:animate 2s linear infinite;
+}
+.ring > span:before
+{
+  content:'';
+  position:absolute;
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  background:magenta;
+  top:-6px;
+  right:-8px;
+  box-shadow:0 0 20px magenta;
+}
+@keyframes animateC
+{
+  0%
+  {
+    transform:rotate(0deg);
+  }
+  100%
+  {
+    transform:rotate(360deg);
+  }
+}
+@keyframes animate
+{
+  0%
+  {
+    transform:rotate(45deg);
+  }
+  100%
+  {
+    transform:rotate(405deg);
+  }
+}
