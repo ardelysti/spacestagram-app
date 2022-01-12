@@ -1,0 +1,14 @@
+{
+  "name": "spacestagram-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ardelysti/spacestagram-app.git",
+  "author": "Ardel Kardi <pnkardi2@illinois.edu>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
