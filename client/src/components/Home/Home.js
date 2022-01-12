@@ -134,13 +134,14 @@ const Home = () => {
                 <Modal 
                     className='details-modal'
                     show={showDetails} 
-                    onHide={handleClose}>
+                    onHide={handleClose}
+                    centered>
                     <Modal.Header closeButton>
                         <Modal.Title>
                             {currentDetails.title}
                         </Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>
+                    <Modal.Body className='details-body'>
                         <div className='details-date'>
                             {currentDetails.date}
                         </div>
