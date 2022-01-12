@@ -9,9 +9,6 @@ import axios from 'axios';
 
 import './Home.css';
 
-const API_KEY = "***REMOVED***";
-// const API_KEY = "***REMOVED***";
-const count = 18;
 const breakpointColumnsObj = {
     default: 3,
     1100: 2,
@@ -34,28 +31,15 @@ const Home = () => {
 
     const fetchData = () => {
         axios
-            .get(`https://api.nasa.gov/planetary/apod?count=${count}&thumbs=true&api_key=${ API_KEY }`)
+            .get("/api")
             .then((res) => {
-                console.log(res.data);
                 setData(res.data);
+                console.log(res.data)
                 setStatus('success');
             })
-            .catch(function (error) {
+            .catch(function(error) {
                 setStatus('error');
-                if (error.response) {
-                    // Request made and server responded
-                    console.log(error.response.data);
-                    console.log(error.response.status);
-                    console.log(error.response.headers);
-                } else if (error.request) {
-                    // The request was made but no response was received
-                    console.log(error.request);
-                } else {
-                    // Something happened in setting up the request that triggered an Error
-                    console.log('Error', error.message);
-                }
-          
-            });
+            })
     }
 
     const handleLiked = (name) => {
