@@ -100,6 +100,17 @@ const Home = () => {
                             <Card.Body className='card-text'>
                                 <div className='align-left'>
                                     <button
+                                        className='like-button'
+                                        onClick={() => handleLiked(curr.title)}>
+                                        <FontAwesomeIcon
+                                            icon={favs.includes(curr.title)
+                                                ? solFaHeart
+                                                : regFaHeart}
+                                            className='align-start action-button' />
+                                    </button>
+                                </div>
+                                <div className='align-right'>
+                                    <button
                                         className='show-details-button'
                                         onClick={() => handleShow(idx)}>
                                         <FontAwesomeIcon
@@ -114,17 +125,6 @@ const Home = () => {
                                                 className='align-end' />
                                         </a>
                                     }
-                                </div>
-                                <div className='align-right'>
-                                    <button
-                                        className='like-button'
-                                        onClick={() => handleLiked(curr.title)}>
-                                        <FontAwesomeIcon
-                                            icon={favs.includes(curr.title)
-                                                ? solFaHeart
-                                                : regFaHeart}
-                                            className='align-start action-button' />
-                                    </button>
                                 </div>
                             </Card.Body>
                         </Card>
