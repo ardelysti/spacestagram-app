@@ -97,6 +97,12 @@ const Home = () => {
                             <Card.Title className='card-data-title'>
                                 { curr.title }
                             </Card.Title>
+                                <div className='details-date'>
+                                    {currentDetails.date}
+                                </div>
+                            <Card.Subtitle>
+
+                            </Card.Subtitle>
                             <Card.Body className='card-text'>
                                 <div className='align-left'>
                                     <button
@@ -142,9 +148,6 @@ const Home = () => {
                         </Modal.Title>
                     </Modal.Header>
                     <Modal.Body className='details-body'>
-                        <div className='details-date'>
-                            {currentDetails.date}
-                        </div>
                         <div>
                             {currentDetails.explanation}
                         </div>
