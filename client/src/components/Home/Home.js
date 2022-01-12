@@ -97,11 +97,10 @@ const Home = () => {
                             <Card.Title className='card-data-title'>
                                 { curr.title }
                             </Card.Title>
+                            <Card.Subtitle>
                                 <div className='details-date'>
                                     {currentDetails.date}
                                 </div>
-                            <Card.Subtitle>
-
                             </Card.Subtitle>
                             <Card.Body className='card-text'>
                                 <div className='align-left'>
