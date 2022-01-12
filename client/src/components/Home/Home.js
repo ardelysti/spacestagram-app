@@ -10,8 +10,8 @@ import axios from 'axios';
 import './Home.css';
 
 const breakpointColumnsObj = {
-    default: 3,
-    1100: 2,
+    default: 4,
+    1100: 3,
     700: 1,
     500: 1
 };

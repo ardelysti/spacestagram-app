@@ -10,13 +10,6 @@ const count = 54;
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.get('/api', function (req, res, next) {
-//    res.json({
-//         title: 'Oompa Loompa',
-//         media_type: 'image',
-//         url: 'https://www.nasa.gov/sites/default/files/thumbnails/image/hubble_mwayjet_composite.jpg',
-//         date: '2020-20-12',
-//         explanation: "This is fake as hell. I'm here to party"
-//    })
 
     request.get(`https://api.nasa.gov/planetary/apod?count=${count}&thumbs=true&api_key=${ API_KEY }`, (err, response, body) => {
         if (err) {
