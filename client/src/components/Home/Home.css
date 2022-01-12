@@ -13,11 +13,16 @@
     border-radius: 16px;
     border-width: 0;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
-    max-height: 80vh;
+    max-height: 70vh;
+}
+
+.details-title {
+    font-size: 1.2rem;
 }
 
 .details-body {
     overflow: auto;
+    font-size: 0.8rem;
 }
 
 .result-card .card-body,
@@ -27,8 +32,9 @@
 
 .details-date {
     font-style:italic;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     color: blue;
+    padding: 0 1rem
 }
 
 .card-data-title.card-title {
