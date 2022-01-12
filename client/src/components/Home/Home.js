@@ -116,21 +116,21 @@ const Home = () => {
                                     </button>
                                 </div>
                                 <div className='align-right'>
-                                    <button
-                                        className='show-details-button'
-                                        onClick={() => handleShow(idx)}>
-                                        <FontAwesomeIcon
-                                            icon={faInfoCircle}
-                                            className='align-start' />
-                                    </button>
                                     { curr.media_type === "video" 
                                         &&
                                         <a href={curr.url}>
                                             <FontAwesomeIcon
                                                 icon={faFilm}
-                                                className='align-end' />
+                                                className='align-start' />
                                         </a>
                                     }
+                                    <button
+                                        className='show-details-button'
+                                        onClick={() => handleShow(idx)}>
+                                        <FontAwesomeIcon
+                                            icon={faInfoCircle}
+                                            className='align-end' />
+                                    </button>
                                 </div>
                             </Card.Body>
                         </Card>
@@ -143,7 +143,7 @@ const Home = () => {
                     onHide={handleClose}
                     centered>
                     <Modal.Header closeButton>
-                        <Modal.Title>
+                        <Modal.Title className='details-title'>
                             {currentDetails.title}
                         </Modal.Title>
                     </Modal.Header>
